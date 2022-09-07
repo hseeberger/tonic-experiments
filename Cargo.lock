@@ -193,9 +193,9 @@ dependencies = [
 
 [[package]]
 name = "configured"
-version = "0.2.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52e71c33ded1cb49233a75891b845ad4114c7c7eeed4afd071df397bbb631032"
+checksum = "2a2f4cd97956917cee1b7688196c72456ce333368942f6e9277dd71bb26cdfee"
 dependencies = [
  "anyhow",
  "config",
@@ -1216,9 +1216,9 @@ dependencies = [
 
 [[package]]
 name = "tonic"
-version = "0.8.0"
+version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "498f271adc46acce75d66f639e4d35b31b2394c295c82496727dafa16d465dd2"
+checksum = "11cd56bdb54ef93935a6a79dbd1d91f1ebd4c64150fd61654031fd6b8b775c91"
 dependencies = [
  "async-stream",
  "async-trait",
@@ -1262,6 +1262,21 @@ dependencies = [
 [[package]]
 name = "tonic-experiments-client"
 version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "chrono",
+ "configured",
+ "hyper",
+ "prost",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tonic",
+ "tonic-build",
+ "tracing",
+ "tracing-subscriber",
+ "walkdir",
+]
 
 [[package]]
 name = "tonic-experiments-server"

@@ -3,7 +3,7 @@ use serde_json::json;
 use tonic_experiments_server::{init_tracing, run};
 use tracing::error;
 
-const ERROR_MSG: &str = "hello-tonic exited with ERROR";
+const ERROR_MSG: &str = "tonic-experiments-server exited with ERROR";
 
 #[tokio::main]
 async fn main() {

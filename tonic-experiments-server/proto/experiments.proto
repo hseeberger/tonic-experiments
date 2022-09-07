@@ -1,0 +1,21 @@
+syntax = "proto3";
+package experiments;
+
+service Experiments {
+    rpc Ping (PingRequest) returns (PingResponse);
+    rpc Echo (EchoRequest) returns (EchoResponse);
+}
+
+message PingRequest {
+}
+
+message PingResponse {
+}
+
+message EchoRequest {
+    string text = 1;
+}
+
+message EchoResponse {
+    string text = 1;
+}

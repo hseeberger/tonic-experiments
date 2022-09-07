@@ -1,0 +1,2 @@
+[workspace]
+members = [ "tonic-experiments-client", "tonic-experiments-server" ]
